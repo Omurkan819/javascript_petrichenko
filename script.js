@@ -1,6 +1,6 @@
-// 'use strict';
+'use strict';
 
-a = 5;
+// a = 5;
 
 // var leftBorderWidth = 1; {
 //   let second = 2;
@@ -49,7 +49,40 @@ a = 5;
 
 // console.log("asw" == "as");
 
-let isChecked = false;
-isClose = false;
+// let isChecked = false;
+// isClose = false;
 
-console.log(isChecked || isClose);
+// console.log(isChecked || isClose);
+
+// --------- Задание -----------------
+
+let money = +prompt("Ваш бюджет на месяц?", '');
+// console.log(typeof (money));
+console.log(money);
+
+let time = prompt("Введите дату в формате YYYY-MM-DD", '');
+// console.log(typeof (time));
+console.log(time);
+
+let appData = {
+  budget: money,
+  timeData: time,
+  expenses: {},
+  optionalExpenses: {},
+  income: [],
+  savings: false
+};
+
+// console.log(typeof (appData));
+// console.log(appData.savings);
+// console.log(typeof (appData.savings));
+
+let a = prompt("Введите обязательную статью расходов в этом месяце", '');
+let b = +prompt("Во сколько обойдется?", '');
+console.log(a);
+console.log(b);
+
+appData.expenses[a] = b;
+
+console.log(appData.expenses.a);
+console.log(appData.expenses.b);
